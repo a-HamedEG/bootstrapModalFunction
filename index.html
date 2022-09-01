@@ -12,19 +12,38 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="modalBtn">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" tabindex="-1" id="modalMessage">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body" style="text-align: center; color: white;">
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" id="modalMessage">
+      <div class="modal-dialog">
+        <div class="modal-content" style="transform: translateX(25%);">
+          <div class="modal-body" style="text-align: center; color: white;">
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="container">
+      <h2 class="my-5 text-center">Modal Function</h2>
+      <label for="inputText" class="form-label mb-3">Type text for the modal</label>
+      <input type="text" id="inputText" maxlength="30" class="form-control mb-3">
+      <label for="inputDuration" class="form-label mb-3">Duration for the modal to fade out</label>
+      <input type="number" id="inputDuration" class="form-control mb-3">
+      <label for="inputColor" class="form-label mb-3">Color</label>
+      <input type="text" id="inputColor" class="form-control mb-3">
+      <label for="inputSize" class="form-label mb-3">Size</label>
+      <select id="inputSize" class="form-select mb-5">
+        <option value="1">sm</option>
+        <option value="2">lg</option>
+      </select>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" id="modalBtn">
+          Try it
+      </button>
+      <button type="button" class="btn btn-danger" id="modalBtnRandom">
+          Click for Random inputs
+      </button>
+    </div>
+  
+
   </body>
 </html>
