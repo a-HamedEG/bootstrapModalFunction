@@ -28,8 +28,10 @@ modalBtn.addEventListener("click",function () {
     } else {
         if (inputSize == 1) {
             inputSize = "sm"
+            modalBackground.style.transform = "translateX(25%)"
         } else {
             inputSize = "lg"
+            modalBackground.style.transform = "translateX(0)"
         }
     
         console.log(inputColor,inputDuration,inputSize,inputText)
@@ -40,5 +42,6 @@ modalBtn.addEventListener("click",function () {
 
 modalBtnRandom.addEventListener("click",function () { 
     // Small size is "sm" Large Size is "lg"
+    modalBackground.style.transform = "translateX(25%)"
     modalmessage("Hi There", "Green", 750, "sm")
 })
